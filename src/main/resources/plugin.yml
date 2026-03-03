@@ -1,0 +1,20 @@
+name: Tutorial
+version: '1.0-SNAPSHOT'
+main: ru.sscorpionn.tutorial.Tutorial
+api-version: '1.21'
+commands:
+  гдея:
+    description: Пишет координаты игрока
+  heal:
+    description: Лечит игрока
+    permission: tutorial.heal
+  day:
+    description: Включает день
+    permission: tutorial.day
+permissions:
+  tutorial.heal:
+    description: Использовать команду /heal
+    default: op
+  tutorial.day:
+    description: Использовать команду /day
+    default: op
